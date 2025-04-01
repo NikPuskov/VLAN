@@ -28,3 +28,5 @@
 
 По итогу выполнения домашнего задания у нас должна получиться следующая топология сети:
 
+![Image alt](https://github.com/NikPuskov/VLAN/blob/main/image.png)
+
