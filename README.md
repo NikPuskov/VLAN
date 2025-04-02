@@ -40,7 +40,7 @@
 
 - На RHEL-based системах (на примере хоста testClient1). Создаём файл /etc/sysconfig/network-scripts/ifcfg-vlan1 со следующим параметрами:
 
-image1
+![Image alt](https://github.com/NikPuskov/VLAN/blob/main/vlan1.jpg)
 
 - На хосте testServer1 создаем идентичный файл с другим IP-адресом (10.10.10.1)
 
@@ -56,7 +56,7 @@ image1
 
 - Настройка VLAN на Ubuntu (на примере testClient2 ) Требуется создать файл /etc/netplan/50-cloud-init.yaml со следующим параметрами:
 
-image2
+![Image alt](https://github.com/NikPuskov/VLAN/blob/main/vlan2.jpg)
 
 - На хосте testServer2 создаём идентичный файл с другим IP-адресом (10.10.10.1)
 
@@ -72,13 +72,13 @@ image2
 
 `vim /etc/sysconfig/network-scripts/ifcfg-eth1`
 
-image3
+![Image alt](https://github.com/NikPuskov/VLAN/blob/main/vlan3.jpg)
 
 - У интерфейса ifcfg-eth2 идентичный конфигурационный файл, в котором нужно изменить имя интерфейса
 
 - После настройки интерфейсов eth1 и eth2 нужно настроить bond-интерфейс, для этого создадим файл /etc/sysconfig/network-scripts/ifcfg-bond0:
 
-image4
+![Image alt](https://github.com/NikPuskov/VLAN/blob/main/vlan4.jpg)
 
 - После создания данных конфигурационных файлов необходимо перезапустить сеть:
 
